@@ -1,8 +1,36 @@
 body {
-  background-color: #edf8fb
-  color: #b3cde3
+  background-color: #edf8fb;
+  color: #b3cde3;
   text-align: center;
+  margin: 0;
 }
 h1 {
-  color: #8c96c6
+  color: #8c96c6;
+  padding: 5px;
+  margin: 0;
+}
+#body-container {
+  background-color: #f7f7f7;
+  max-width: 1000px;
+  margin: auto;
+  min-height: 100vh;
+  border: 2px solid #f7f7f7;
+  border-radius: 25px;
+  overflow: hidden;
+}
+#header {
+  background-color: #0571b0;
+}
+#profile-picture {
+  float: left;
+}
+#welcome-text {
+  padding-top: 25px;
+  font-size: 25px;
+}
+#research-interests {
+  text-align: left;
+  font-size: 25px;
+  position: relative;
+  left: 50px;
 }
