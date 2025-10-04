@@ -3,6 +3,11 @@
 // {
 //   document.writeln(arr[i],"<br>");
 // }
+var webmaps=
+[
+  ["Zillo", "https://www.zillow.com/", "Zillow makes searching for a new home accessible for the general public."],
+  ["Map Quest", "https://www.mapquest.com/", "Map Quest allows users to make traveling plans easier."]
+];
 function welcome()
 {
   let a = "Please enter your name.";
@@ -16,12 +21,12 @@ document.write(welcome());
 functiton webmap_table()
 {
   document.write("<table width=100%>");
-  for (var row=0; row < 2; row++)
+  for (var row=0; row < webmaps.length; row++)
   {
     document.write("<tr>");
-    for (var column=0; column < 3; column++)
+    for (var column=0; column < webmaps[0].length; column++)
     {
-      document.write("<td>" + row + "," + column + "</td>");
+      document.write("<td>" + webmaps[row][column] + "</td>");
     }
     document.write("</tr>");
   }
